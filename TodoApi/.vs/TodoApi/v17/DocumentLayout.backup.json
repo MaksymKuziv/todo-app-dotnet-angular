@@ -64,7 +64,7 @@
               "RelativeDocumentMoniker": "Controllers\\TodosController.cs",
               "ToolTip": "C:\\Users\\maksi\\todo-app-dotnet-angular\\TodoApi\\Controllers\\TodosController.cs",
               "RelativeToolTip": "Controllers\\TodosController.cs",
-              "ViewState": "AgIAAEIAAAAAAAAAAAAowAMAAAAVAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-13T01:04:21.661Z",
               "EditorCaption": ""
@@ -79,8 +79,7 @@
               "RelativeToolTip": "Properties\\launchSettings.json",
               "ViewState": "AgIAABUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-05-13T00:57:19.383Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-13T00:57:19.383Z"
             },
             {
               "$type": "Document",
@@ -92,8 +91,7 @@
               "RelativeToolTip": "appsettings.Development.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-05-13T00:57:08.978Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-13T00:57:08.978Z"
             },
             {
               "$type": "Document",
@@ -105,8 +103,7 @@
               "RelativeToolTip": "appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-05-13T00:57:06.176Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-13T00:57:06.176Z"
             },
             {
               "$type": "Document",
@@ -130,8 +127,7 @@
               "RelativeToolTip": "Models\\TodoItem.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-12T23:42:35.767Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-12T23:42:35.767Z"
             },
             {
               "$type": "Document",
@@ -143,8 +139,7 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-12T23:30:32.604Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-12T23:30:32.604Z"
             }
           ]
         }
