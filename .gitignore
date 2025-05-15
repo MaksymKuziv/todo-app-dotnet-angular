@@ -59,3 +59,27 @@ dist/
 .angular/
 npm-debug.log
 .env
+
+# Angular CLI cache
+.angular/cache/
+
+# Optional
+coverage/
+
+# Visual Studio Code
+.vscode/
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# SQLite DB
+*.db
+
+# Docker
+docker-compose.override.yml
+docker-compose.*
+*.db
