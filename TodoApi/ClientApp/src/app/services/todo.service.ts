@@ -13,7 +13,7 @@ export interface TodoItem {
 })
 export class TodoService {
 
-  private apiUrl = '/api/todoitems';
+  private apiUrl = '/api/todos';
 
   constructor(private http: HttpClient) {}
 
