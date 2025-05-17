@@ -7,7 +7,7 @@ It allows users to manage their tasks with a modern UI and a clean backend API.
 ## Technologies Used
 
 - **Backend:** ASP.NET Core 9, Entity Framework Core, SQL Server
-- **Frontend:** Angular 17, Angular Material, RxJS
+- **Frontend:** Angular 19, Angular Material, RxJS
 - **Other:** Swagger, AutoMapper, Docker (optional), GitHub Actions (CI/CD)
 
 ## Project Structure
