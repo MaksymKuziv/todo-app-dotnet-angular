@@ -1,6 +1,5 @@
 using Microsoft.EntityFrameworkCore;
 using TodoApi.Data;
-using Microsoft.AspNetCore.SpaServices.Extensions; // Required for UseSpa()
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -38,15 +37,18 @@ app.UseAuthorization();
 app.MapControllers();
 
 // Use SPA middleware
-app.UseSpa(spa =>
+if (app.Environment.IsDevelopment())
 {
-    spa.Options.SourcePath = "ClientApp";
+    app.UseSwagger();
+    app.UseSwaggerUI();
 
-    if (app.Environment.IsDevelopment())
+}
+else
+{
+    app.UseSpa(spa =>
     {
-        // Use Angular CLI dev server in development
-        spa.UseProxyToSpaDevelopmentServer("http://localhost:4200");
-    }
-});
+        spa.Options.SourcePath = "ClientApp";
+    });
+}
 
 app.Run();
