@@ -83,3 +83,9 @@ coverage/
 docker-compose.override.yml
 docker-compose.*
 *.db
+/TodoApi/.vs/TodoApi/DesignTimeBuild/.dtbcache.v2
+*.db-shm
+*.db-wal
+/TodoApi/.vs/TodoApi/v17/.suo
+/TodoApi/.vs/TodoApi/v17/DocumentLayout.backup.json
+/TodoApi/.vs/TodoApi/v17/DocumentLayout.json
