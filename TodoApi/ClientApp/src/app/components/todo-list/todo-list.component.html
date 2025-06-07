@@ -7,8 +7,8 @@
   </form>
 
   <ul>
-    <li *ngFor="let todo of todos">
-      <input type="checkbox" [checked]="todo.isComplete" (change)="toggleComplete(todo)">
+    <li *ngFor="let todo of todos;">
+      <input type="checkbox" [(ngModel)]="todo.isComplete" (ngModelChange)="toggleComplete(todo)">
       <span [ngClass]="{done: todo.isComplete}">{{ todo.title }}</span>
       <button (click)="deleteTodo(todo.id)">Delete</button>
     </li>

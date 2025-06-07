@@ -1,7 +1,7 @@
 {
   "/api": {
-    "target": "https://localhost:44301",
-    "sslPort": 44301,
+    "target": "https://localhost:7107",
+    "sslPort": 7107,
     "secure": false,
     "changeOrigin": true
   }
