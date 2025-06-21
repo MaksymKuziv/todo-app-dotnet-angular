@@ -5,7 +5,7 @@ import { Observable } from 'rxjs';
 export interface TodoItem {
   id: number;
   title: string;
-  isComplete: boolean;
+  isCompleted: boolean;
 }
 
 @Injectable({

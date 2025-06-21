@@ -8,8 +8,8 @@
 
   <ul>
     <li *ngFor="let todo of todos;">
-      <input type="checkbox" [(ngModel)]="todo.isComplete" (ngModelChange)="toggleComplete(todo)">
-      <span [ngClass]="{done: todo.isComplete}">{{ todo.title }}</span>
+      <input type="checkbox" [checked]="todo.isCompleted" (change)="toggleComplete(todo)">
+      <span [ngClass]="{done: todo.isCompleted}">{{ todo.title }}</span>
       <button (click)="deleteTodo(todo.id)">Delete</button>
     </li>
   </ul>

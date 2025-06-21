@@ -28,7 +28,7 @@ export class TodoListComponent implements OnInit {
 
   addTodo() {
     if (!this.newTodoTitle.trim()) return;
-    this.todoService.addTodo({ title: this.newTodoTitle, isComplete: false })
+    this.todoService.addTodo({ title: this.newTodoTitle, isCompleted: false })
       .subscribe(() => {
         this.newTodoTitle = '';
         this.loadTodos();
@@ -36,7 +36,7 @@ export class TodoListComponent implements OnInit {
   }
 
   toggleComplete(todo: TodoItem) {
-    const updated = { ...todo, isComplete: !todo.isComplete };
+    const updated = { ...todo, isCompleted: !todo.isCompleted };
     this.todoService.updateTodo(updated).subscribe(() => this.loadTodos());
   }
 
