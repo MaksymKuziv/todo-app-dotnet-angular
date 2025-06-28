@@ -15,6 +15,8 @@ export class TodoListComponent implements OnInit {
 
   todos: TodoItem[] = [];
   newTodoTitle: string = '';
+  editingTodoId: number | null = null;
+  editableTitle: string = '';
 
   constructor(private todoService: TodoService) {}
 
@@ -43,4 +45,28 @@ export class TodoListComponent implements OnInit {
   deleteTodo(id: number) {
     this.todoService.deleteTodo(id).subscribe(() => this.loadTodos());
   }
+
+  startEdit(todo: TodoItem) {
+    this.editingTodoId = todo.id;
+    this.editableTitle = todo.title;
+  }
+
+  cancelEdit() {
+    this.editingTodoId = null;
+    this.editableTitle = '';
+  }
+
+  saveEdit(todo: TodoItem) {
+    const updatedTodo = { ...todo, title: this.editableTitle };
+    this.todoService.updateTodo(updatedTodo).subscribe(() => {
+      this.editingTodoId = null;
+      this.editableTitle = '';
+      this.loadTodos();
+    });
+  } 
+
+  trackById(index: number, item: TodoItem): number {
+    return item.id;
+  }
+
 }

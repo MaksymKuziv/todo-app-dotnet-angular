@@ -2,15 +2,39 @@
   <h2>Todo List</h2>
 
   <form (submit)="addTodo(); $event.preventDefault()">
-    <input type="text" [(ngModel)]="newTodoTitle" name="title" placeholder="New task..." required>
+    <input
+      type="text"
+      [(ngModel)]="newTodoTitle"
+      name="title"
+      placeholder="New task..."
+      required
+    />
     <button type="submit">Add</button>
   </form>
 
   <ul>
-    <li *ngFor="let todo of todos;">
-      <input type="checkbox" [checked]="todo.isCompleted" (change)="toggleComplete(todo)">
-      <span [ngClass]="{done: todo.isCompleted}">{{ todo.title }}</span>
-      <button (click)="deleteTodo(todo.id)">Delete</button>
+    <li *ngFor="let todo of todos; trackBy: trackById">
+      <input
+        type="checkbox"
+        [checked]="todo.isCompleted"
+        (change)="toggleComplete(todo)"
+      />
+      <ng-container *ngIf="editingTodoId === todo.id; else displayTitle">
+        <input type="text"
+               [(ngModel)]="editableTitle" 
+               name="edit-title" />
+        <button (click)="saveEdit(todo)">Save</button>
+        <button (click)="cancelEdit()">Cancel</button>
+      </ng-container>
+
+      <ng-template #displayTitle>
+        <span class="task-name"
+             [ngClass]="{ done: todo.isCompleted }">{{ todo.title }}</span>
+        <button (click)="startEdit(todo)">Edit</button>
+      </ng-template>
+
+      <button (click)="deleteTodo(todo.id)"
+              *ngIf="editingTodoId !== todo.id">Delete</button>
     </li>
   </ul>
 </div>
